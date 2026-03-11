@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://ep-blue-dew-a14ah1oz-pooler.ap-southeast-1.aws.neon.tech/neondb?user=neondb_owner&password=npg_WCHzRdu62Dcj&sslmode=require&channelBinding=require
+#    url: jdbc:postgresql://localhost:5432/flight_booking_system
+#    username: postgres
+#    password: postgres
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+
+  sql:
+    init:
+      mode: always
